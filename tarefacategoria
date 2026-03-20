@@ -1,0 +1,20 @@
+using System;
+
+namespace ProjetoTarefas
+{
+    // Esta classe serve para documentar os tipos de objetivos/categorias do quadro
+    class Objetivo
+    {
+        public const string CATEGORIA_1 = "Pessoal";
+        public const string CATEGORIA_2 = "Profissional";
+        public const string CATEGORIA_3 = "Academico";
+
+        public void mostrarCategorias()
+        {
+            Console.WriteLine("Categorias Disponíveis:");
+            Console.WriteLine("1 - " + CATEGORIA_1);
+            Console.WriteLine("2 - " + CATEGORIA_2);
+            Console.WriteLine("3 - " + CATEGORIA_3);
+        }
+    }
+}
