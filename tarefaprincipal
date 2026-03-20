@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Pessoa
+{
+    class Principal
+    {
+        //método principal
+        static void Main(string[] args)
+        {
+            Tarefas tarefa1 = new Tarefas();
+            Tarefas tarefa2 = new Tarefas();
+
+            tarefa1.provarExistencia();
+            tarefa2.provarExistencia();
+
+            tarefa1.tarefa = "Estudar C#";
+            tarefa1.descricao = "Fazer exercícios de classe";
+            tarefa1.categoria = 1;
+            tarefa1.pronto = false;
+
+            tarefa2.tarefa = "Fazer TCC";
+            tarefa2.descricao = "Escrever introdução";
+            tarefa2.categoria = 2;
+            tarefa2.pronto = true;
+
+            Console.WriteLine(tarefa1.tarefa);
+            Console.WriteLine(tarefa1.descricao);
+            Console.WriteLine(tarefa1.categoria);
+            Console.WriteLine(tarefa1.pronto);
+
+            Console.WriteLine(tarefa2.tarefa);
+            Console.WriteLine(tarefa2.descricao);
+            Console.WriteLine(tarefa2.categoria);
+            Console.WriteLine(tarefa2.pronto);
+        }
+    }
+}
